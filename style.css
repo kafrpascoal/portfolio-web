@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* =========================
+   RESET / GLOBAL
+========================= */
+html, body {
+     min-height: 100vh; margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+       font-size: 20px;
+       background-color: #f8f9fa; /* fundo claro */
+       color: #1f2933; /* texto escuro */
+       text-align: center; } 
+
+/* =========================
+ HEADER 
+ ========================= */
+ header {padding: 20px;} 
+ header h1 { margin-bottom: 10px; } 
+ header nav ul { list-style: none; padding: 0; }
+ header nav a { text-decoration: none; font-weight: bold; }
+
+/* =========================
+   MAIN
+========================= */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px; /*borda*/
+    line-height: 1.6;
+}
+
+#sobre {
+    text-align: justify;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding: 0;
+    text-align: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer h5 {
+    font-style: italic;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    main {
+        margin: 20px 10px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    #sobre {
+        text-align: left;
+    }
+
+    ul, ol {
+        padding-left: 16px;
+        text-align: left;
+    }
+
+    footer {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
